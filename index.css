@@ -1,3 +1,11 @@
+#scroll-adjs {
+  width: 10ch;
+}
+
+#txt {
+  border-right: 0.1rem solid black;
+}
+
 /* body {
     margin: 0;
     background: url('./assets/background.jpg') no-repeat center center fixed;
