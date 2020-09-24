@@ -1,9 +1,17 @@
-#scroll-adjs {
-  width: 10ch;
+.jumbotron {
+  background-image: url("/assets/green-code.jpg");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  color: white;
 }
 
 #txt {
-  border-right: 0.1rem solid black;
+  border-right: 0.1rem solid white;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 /* body {

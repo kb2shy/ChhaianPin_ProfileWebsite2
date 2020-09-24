@@ -1,13 +1,3 @@
-// const TypeWriter = function(txtElement, words, wait = 3000) {
-//     this.txtElement = txtElement;
-//     this.words = words;
-//     this.txt = '';
-//     this.wordIndex = 0;
-//     this.wait = parseInt(wait, 10);
-//     this.type();
-//     this.isDeleting = false;
-// }
-
 class TypeWriter {
     constructor(txtElement, words, wait=3000) {
         this.txtElement = txtElement;
@@ -18,10 +8,8 @@ class TypeWriter {
         this.type();
         this.isDeleting = false;
     }
-}
 
-// Type Method
-TypeWriter.prototype.type = function() {
+    type = () => {
     // Current index of word
     const current = this.wordIndex % this.words.length;
 
@@ -62,6 +50,7 @@ TypeWriter.prototype.type = function() {
     setTimeout(() => {
         this.type();
     }, typeSpeed)
+    }
 }
 
 // Init On DOM Load
